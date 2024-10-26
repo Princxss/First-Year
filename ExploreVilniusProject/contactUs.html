@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="images/LT.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<title>Contact Page</title>
+</head>
+<body>
+	<header class="header">
+		<div id="hero-image">
+			<div class="hero-text">
+				<h1 style="font-size:40px">Vilnius</h1>
+				<p>Lithuania</p>
+			</div>
+		</div>
+	
+		<nav id="navbar">
+			<a href="index.html">Home</a>
+			<a href="contactUs.html" class="active">Contact</a>
+		</nav>
+	</header>
+	
+	<div class="contactUs-container">
+		<div id="headerText">
+			<h1>Welcome to the Contact Page</h1>
+			<p>
+				Here you will find our contacts such as, phone, email, address, etc. There is also a form you can fill out if you have any 
+				additional queries.<br> Thank you for using our webpage.
+			</p>
+		</div>
+		
+		<div id="contactHeader">
+			<h2>Here are our contacts</h2>
+		</div>
+		
+		<br>
+		
+		<!--Our Address-->
+		<div class="pageAddress">
+			<h3>ADDRESS</h3>
+			<p>
+				Moylish,<br> 
+				Limerick,<br> 
+				V94 EC5T
+			</p>
+		</div>
+		<!--Our Email-->
+		<div class="pageEmail">
+			<h3>EMAIL</h3>
+			<p>
+				<a href="mailto:K00281934@student.lit.ie">K00281934@student.lit.ie</a>
+			</p>
+		</div>
+		<!--Our Phone Number-->
+		<div class="pagePhone">
+			<h3>PHONE NUMBER</h3>
+			<p>
+				(061) 293 000
+			</p>
+		</div>
+		
+		<br><br>
+		
+		<div id="contactForm">
+			<h2>You can also contact us here</h2>
+		</div>
+		<div class="formText">
+			<p>
+				If you have any other queries, do not hesitate to fill in the form below and we will be right with you!
+			</p>
+		</div>
+		
+		<!--Contact Form-->
+		<form id="userForm" action="http://litstudentprojects.net/rwd-a1-response.php" method="post">
+			<fieldset class="row">
+				<!--Name-->
+				<div class="col">
+					<label for="name">*Name:</label>
+				</div>
+				<div class="row">
+					<input type="text" id="name" name="name" placeholder="Jane Doe">
+				</div>
+				<!--Address-->
+				<div class="col">
+					<label for="address">Address:</label>
+				</div>
+				<div class="row">
+					<textarea id="address" name="address" rows="5" cols="40"></textarea>
+				</div>
+				<!--Telephone-->
+				<div class="col">
+					<label for="telephone">*Telephone:</label>
+				</div>
+				<div class="row">
+					<input type="tel" id="telephone" name="telephone" placeholder="123-45-678">
+				</div>
+				<!--Email #1-->
+				<div class="col">
+					<label for="email1">*Email:</label>
+				</div>
+				<div class="row">
+					<input type="email" id="email1" name="email1" placeholder="someone@gmail.com">
+				</div>
+				<!--Email #2-->
+				<div class="col">
+					<label for="email2">*Retype your email:</label>
+				</div>
+				<div class="row">
+					<input type="email" id="email2" name="email2" placeholder="someone@gmail.com">
+				</div>
+				<!--Source-->
+				<div class="col">
+					<label for="source">How did you hear about us?</label>
+				</div>
+				<div class="row">
+					<select id="source" name="source">
+						<option value="internet">Internet</option>
+						<option value="wordofmouth">Word of Mouth</option>
+						<option value="television">Television</option>
+						<option value="newspaper">Newspaper/Radio Ad</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<!--Enquiry-->
+				<div class="col">
+					<label for="enquiry">Enquiry:</label>
+				</div>
+				<div class="row">
+					<textarea id="enquiry" name="enquiry" rows="5" cols="40"></textarea>
+				</div>
+				<!--Submit-->
+				<div class="col">
+					<input type="submit" value="Submit">
+					<p><b>* required field</b></p>
+				</div>
+			</fieldset>
+		</form>
+		
+		<footer class="addInfo">
+			<article>
+				<h3>Additional Information</h3>
+				<p>
+					Our helpdesk operates 24/7 but be mindful that your query may not be answered ASAP. 
+					Allow up to 24 hours for a response. Thank you.
+				</p>
+			</article>
+		</footer>
+	</div>
+	
+	<!--Sticky Navbar-->
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+</body>
+</html>
