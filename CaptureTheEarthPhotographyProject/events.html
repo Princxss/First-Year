@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>News & Events</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/events.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="heroImage">
+			<div class="heroText">
+				<h1 style="font-size:40px">Capture the Earth</h1>
+				<p>Photography Society</p>
+			</div>
+		</div>
+		<div id="navBar">
+			<a href="index.html">Home</a>
+			<a href="events.html" class="active">Events</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</header>
+	
+	<br>
+	
+	<div class="grid-container">
+		<article class="intro">
+			<h2>Welcome to the News & Events page!</h2>
+			<p>
+				Here you will find the latest news and upcoming/past events.<br>
+				If you wish to sign up for any event feel free to!<br>
+				Every event is free of charge when you sign up as a member of our society!
+			</p>
+		</article>
+		
+		<br>
+		
+		<article class="newsHeader">
+			<h3>Latest News</h3>
+		</article>
+		<article class="newsImg">
+			<img src="images/Waterfall.jpg" alt="Icy Waterfall in Iceland">
+		</article>
+		<article class="newsContent">
+			<p>
+				Recently, fellow society members embarked on a journey to Iceland, known for its stunning landscapes and 
+				natural wonders. Equipped with their cameras, tripods, and lenses, they set out to capture the beauty of 
+				the country through their lenses. From the rugged coastline with its crashing waves to the majestic waterfalls
+				and the otherworldly geothermal pools, Iceland proved to be a photographer's paradise. The group hiked 
+				through scenic trails and hiked across glaciers to capture the perfect shot. They also had the opportunity 
+				to witness the spectacular Northern Lights, a breathtaking display of nature's beauty. Their trip was not 
+				just about capturing images, but also learning from each other, exchanging tips, and bonding over their 
+				shared passion for photography. The photographs captured by the group of the breathtaking beauty of Iceland
+				are now live in our gallery!
+			</p>
+		</article>
+		
+		<br>
+		
+		<article class="eventHeader">
+			<h3>Upcoming Events</h3>
+		</article>
+		<article class="event1">
+			<h4><u>Competition Time</u></h4>
+			<img src="images/Plants.jpg" alt="A photo of a plant in dim lighting">
+			<p>
+				This month's competition is to simply capture an images that shows the <i>beauty of nature</i>. The prize is
+				yet to be announced. Be sure to submit an entry by the <b>6th of May</b>!
+			</p>
+		</article>
+		<article class="event2">
+			<h4><u>Nature Hike</u></h4>
+			<img src="images/SunsetTree.jpg" alt="Sun setting between trees">
+			<p>
+				Join us for a <b>guided nature hike</b> in the local park to learn about the diverse wildlife and 
+				ecosystems in our community. The <i>Croagh Patrick</i> in <i>Mayo</i> will be explored this weekend!
+			</p>
+		</article>
+		
+		<br>
+		
+		<article class="hostEvent">
+			We try make exciting events for the society every month... if you have any suggestions feel free to contact us
+			<a href="mailto:k00281934@example.com">here</a>. 
+		</article>
+	</div>
+		
+	<br><br>
+		
+	<footer id="myFooter">
+		<div class="footerContainer">
+			<div class="col1">
+				<ul>
+					<li>
+						<b>Some Useful Links:</b>
+					</li>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col2">
+				<ul>
+					<li>
+						<br>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a href="#">Back to Top</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col3">
+				<ul>
+					<li>
+						<b>Social Media:</b>
+					</li>
+					<li>
+						<a href="#">Instagram</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+	<!--Sticky Navigation Bar-->
+		window.onscroll = function() {myFunction()};
+		var navBar = document.getElementById("navBar");
+		var sticky = navBar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navBar.classList.add("sticky")
+			} else {
+				navBar.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>

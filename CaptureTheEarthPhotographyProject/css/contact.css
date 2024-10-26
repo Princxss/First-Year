@@ -1,0 +1,164 @@
+body {
+	font-family: 'Rubik', sans-serif;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	text-align: center;
+}
+
+a {
+	color: #5d6652;
+}
+
+#heroImage {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Forest.jpg');
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#navBar {
+	overflow: hidden;
+	background-color: #5d6652;
+}
+
+#navBar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+#navBar a.activePage {
+	background-color: #313a2c;
+	color: white;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + body {
+	padding-top: 60px;
+}
+
+article {
+	padding: 1em;
+	background: white;
+	box-shadow: 25px 25px 60px grey;
+	text-align: center;
+}
+
+form {
+	text-align: left;
+	box-shadow: 25px 25px 60px grey;
+}
+
+fieldset {
+	border: 1px solid #ccc;
+}
+
+input, textarea {
+	width: 90%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #5d6652;
+	color: white;
+}
+
+.memberType {
+	border: 1px solid white;
+}
+
+#myFooter {
+	background-color: #5d6652;
+	padding: 20px;
+	left: 0;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+
+#myFooter a, #myFooter h4 {
+	color: white;
+}
+
+#myFooter ul {
+	list-style-type: none;
+}
+
+/*Mobile Grid*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	margin: auto;
+	width: 80%;
+	padding: 16px;
+	gap: 1em;
+	min-height: 100%;
+}
+
+.footerContainer {
+	display: grid;
+	grid-template-columns: auto;
+	margin: auto;
+}
+
+/*Desktop Grid*/
+@media screen and (min-width: 992px) {
+	.grid-container {
+		grid-template-columns: repeat(12, 7%);
+	}
+		.intro {
+			grid-column: -1/1;
+		}
+		form {
+			grid-column: -1/1;
+		}
+		input, textarea {
+			width: 98%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			margin-top: 5px;
+			margin-bottom: 15px;
+		}
+	.footerContainer {
+		grid-template-columns: repeat(3, auto);
+	}
+	#myFooter {
+		grid-column: 1/4;
+	}
+	.col1 {
+		grid-column: 1/2;
+	}
+	.col2 {
+		grid-column: 2/3;
+	}
+	.col3 {
+		grid-column: 3/4;
+	}
+}

@@ -1,0 +1,182 @@
+body {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	text-align: center;
+}
+
+a {
+	color: #5d6652;
+}
+
+#heroImage {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Forest.jpg');
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#navBar {
+	overflow: hidden;
+	background-color: #5d6652;
+}
+
+#navBar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+}
+
+#navBar a.activePage {
+	background-color: #313a2c;
+	color: white;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + body {
+	padding-top: 60px;
+}
+
+article {
+	padding: 1em;
+	background: white;
+	box-shadow: 0 0 1em #000019;
+	box-shadow: 25px 25px 60px grey;
+	text-align: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 5px;
+}
+
+.column {
+	flex: 25%;
+	padding: 0 10px;
+}
+
+.column img {
+	margin-top: 15px;
+	vertical-align: middle;
+	width: 100%;
+	box-shadow: 5px 5px 6px grey;
+}
+
+.top1 img, .top2 img, .top3 img {
+	height: 310px;
+	width: 500px;
+}
+
+.slideshowHeader, .topImgs {
+	border-radius: 25px;
+}
+
+#myFooter {
+	background-color: #5d6652;
+	padding: 20px;
+	left: 0;
+	bottom: 0;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+
+#myFooter a, #myFooter h4 {
+	color: white;
+}
+
+#myFooter ul {
+	list-style-type: none;
+}
+
+/*Mobile Grid*/
+.grid-container {
+	display: grid;
+	grid-template-columns: auto;
+	margin: auto;
+	width: 80%;
+	padding: 16px;
+	gap: 1em;
+	min-height: 100%;
+}
+
+.footerContainer {
+	display: grid;
+	grid-template-columns: auto;
+	margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Desktop Grid*/
+@media screen and (min-width: 992px) {
+	.grid-container {
+		grid-template-columns: repeat(12, 7%);
+	}
+		.intro {
+			grid-column: -1/1;
+		}
+		.topImgs {
+			grid-column: -1/1;
+		}
+			.top1 {
+				grid-column: 1/5;
+			}
+			.top2 {
+				grid-column: 5/9;
+			}
+			.top3 {
+				grid-column: 9/13;
+			}
+		.slideshowHeader {
+			grid-column: -1/1;
+		}
+		.slideshow {
+			grid-column: -1/1;
+		}
+		.imageUpload {
+			grid-column: -1/1;
+		}
+	.footerContainer {
+		grid-template-columns: repeat(3, auto);
+	}
+	#myFooter {
+		grid-column: 1/4;
+	}
+	.col1 {
+		grid-column: 1/2;
+	}
+	.col2 {
+		grid-column: 2/3;
+	}
+	.col3 {
+		grid-column: 3/4;
+	}
+}

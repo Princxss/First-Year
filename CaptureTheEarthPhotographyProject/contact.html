@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="heroImage">
+			<div class="heroText">
+				<h1 style="font-size:40px">Capture the Earth</h1>
+				<p>Photography Society</p>
+			</div>
+		</div>
+		<div id="navBar">
+			<a href="index.html">Home</a>
+			<a href="events.html">Events</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html" class="activePage">Contact</a>
+		</div>
+	</header>
+	
+	<br>
+	
+	<div class="grid-container">
+		<article class="intro">
+			<h2>Welcome to our Contact page!</h2>
+			<p>
+				Here you will find the society's contact information<br>
+				If you wish to solve your query, be sure to fill the form below<br>
+				It usually takes <i>2-4 days</i> for us to respond<br>
+				Thank you!
+			</p>
+		</article>
+		
+		<br>
+		
+		<form action="http://litstudentprojects.net/rwd-a2-response.php" method="post">
+			<fieldset>
+				<p>
+					<label for="name">Name:</label>
+						<input type="text" id="name" name="name" required>
+				</p>
+				<p>
+					<label for="address">Address:</label>
+						<input type="text" id="address" name="address">
+				</p>
+				<p>
+					<label for="mobile">Phone Number:</label>
+						<input type="tel" id="mobile" name="mobile" pattern="(087|086|085)[0-9]{7}" required>
+				</p>
+				<p>
+					<label for="email1">Email:</label>
+						<input type="email" id="email1" name="email1" required>
+				</p>
+				<p>
+					<label for="email2">Retype Email:</label>
+						<input type="email" id="email2" name="email2" required>
+				</p>
+				<fieldset class="memberType">
+					<label for="memberYes">Member:</label>
+					<input type="radio" id="memberYes" name="member" value="yes" required>
+					<label for="memberNo">Non-Member:</label>
+					<input type="radio" id="memberNo" name="member" value="no">
+				</fieldset>
+				<p>
+					<label for="query">Query:</label>
+					<textarea id="query" name="query" rows="5" required></textarea>
+				</p>
+				<input type="submit">
+			</fieldset>
+		</form>
+	</div>
+		
+	<br><br>
+		
+	<footer id="myFooter">
+		<div class="footerContainer">
+			<div class="col1">
+				<ul>
+					<li>
+						<b>Some Useful Links:</b>
+					</li>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col2">
+				<ul>
+					<li>
+						<br>
+					</li>
+					<li>
+						<a href="gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="#">Back to Top</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col3">
+				<ul>
+					<li>
+						<b>Social Media:</b>
+					</li>
+					<li>
+						<a href="#">Instagram</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+	<!--Sticky Navigation Bar-->
+		window.onscroll = function() {myFunction()};
+		var navBar = document.getElementById("navBar");
+		var sticky = navBar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navBar.classList.add("sticky")
+			} else {
+				navBar.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>

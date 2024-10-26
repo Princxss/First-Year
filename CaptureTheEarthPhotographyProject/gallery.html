@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gallery</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div id="heroImage">
+			<div class="heroText">
+				<h1 style="font-size:40px">Capture the Earth</h1>
+				<p>Photography Society</p>
+			</div>
+		</div>
+		<div id="navBar">
+			<a href="index.html">Home</a>
+			<a href="events.html">Events</a>
+			<a href="gallery.html" class="activePage">Gallery</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</header>
+	
+	<br>
+	
+	<div class="grid-container">
+		<article class="intro">
+			<h2>Welcome to the Gallery!</h2>
+			<p>
+				Here you will find the latest and past photographs<br>
+				If you wish to have your photograph showcased, head to the bottom of this page<br>
+				We love to include our members art!
+			</p>
+		</article>
+		
+		<br>
+		
+		<article class="topImgs">
+			<h3>Here are some top picks for this week!</h3>
+		</article>
+		<article class="top1">
+			<img src="images/Forest.jpg" alt="Plants in dimmed lighting">
+			<p>
+				Photographed by: Jane Doe<br>
+				Date: 19th of April
+			</p>
+		</article>
+		<article class="top2">
+			<img src="images/LimerickSunset.jpg" alt="Giraffe figurine in front of pink and orange sunset">
+			<p>
+				Photographed by: John Doe<br>
+				Date: 20th of April
+			</p>
+		</article>
+		<article class="top3">
+			<img src="images/HorizonticalSunsetPink.jpg" alt="The sun rising whilst on a train ride">
+			<p>
+				Photographed by: Jane Doe<br>
+				Date: 16th of April
+			</p>
+		</article>
+		
+		<br>
+		<article class="slideshowHeader">
+			<h3>&#8881; The Gallery &#8880;</h3>
+		</article>
+		
+		<div class="slideshow">
+			<div class="row">
+				<div class="column">
+					<img src="images/BeachSunset.jpg" alt="Sunset at the beach">
+					<img src="images/Forest.jpg" alt="Tall Trees in a Forest">
+					<img src="images/Plants.jpg" alt="Plants in dim lighting">
+					<img src="images/AirportSunrise.jpg" alt="Sunrise at the airport">
+					<img src="images/MountainCrack.jpg" alt="A crack in a mountain">
+				</div>
+				<div class="column">
+					<img src="images/SunsetTree.jpg" alt="Sunset between trees">
+					<img src="images/TrainSunrise.jpg" alt="Sunrise whilst riding the train">
+					<img src="images/GiraffeSunset.jpg" alt="Sunsetting behind giraffe figurine">
+					<img src="images/Lighthouse.jpg" alt="Lighthouse at dusk">
+				</div>
+				<div class="column">
+					<img src="images/Wave.jpg" alt="Wave coming to shore">
+					<img src="images/IcyWater.jpg" alt="Icy water">
+					<img src="images/VerticalSunsetPink.jpg" alt="Pink Sunset">
+					<img src="images/IcyWaterfall.jpg" alt="Icy waterfall">
+					<img src="images/IcyLandscape.jpg" alt="Icy landscape">
+				</div>
+			</div>
+		</div>
+		
+		<br><br>
+		
+		<article class="imageUpload">
+			<h3>Want to be showcased?</h3>
+			<p>
+				If you're a member of our society feel free to submit your own images to us!<br>
+				We will showcase them as we believe photography is an art anyone can pursue.<br>
+				We love seeing your passion through your submissions.<br>
+				You can email us your photographs <a href="mailto:K00281934@example.com">here</a>.
+			</p>
+		</article>
+	</div>
+		
+	<br><br>
+		
+	<footer id="myFooter">
+		<div class="footerContainer">
+			<div class="col1">
+				<ul>
+					<li>
+						<b>Some Useful Links:</b>
+					</li>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="events.html">Events</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col2">
+				<ul>
+					<li>
+						<br>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+					<li>
+						<a href="#">Back to Top</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col3">
+				<ul>
+					<li>
+						<b>Social Media:</b>
+					</li>
+					<li>
+						<a href="#">Instagram</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+	<!--Sticky Navigation Bar-->
+		window.onscroll = function() {myFunction()};
+		var navBar = document.getElementById("navBar");
+		var sticky = navBar.offsetTop;
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navBar.classList.add("sticky")
+			} else {
+				navBar.classList.remove("sticky");
+			}
+		}
+	</script>
+</body>
+</html>
